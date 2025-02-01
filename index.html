@@ -5,7 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Browse 4 Pets</title>
-	
+
+	<!-- Split Type JS -->
+	<script src="https://unpkg.com/split-type"> </script>
+
 <!-- font awsome cdn -->
 <script src="https://kit.fontawesome.com/c53d808e7d.js" crossorigin="anonymous"></script>
 
@@ -430,21 +433,21 @@
 	</section>
 
 
+<!-- bg-gradient-to-br from-[#f4a1fa] to-[#ACD2FD] -->
+
 	<!-- Everyday low Price Section -->
-	<section class="container mx-auto">
+	<section class="container mx-auto section mb-60">
 		<h2 class="text-2xl font-bold my-5 lg:my-10">Everyday low Price</h2>
 		<!-- Cards wrapper -->
 		<div class="flex flex-col lg:flex-row shrink flex-1 gap-5">
 			<!-- First Div -->
-			<div
-				class=" bg-gradient-to-br hover:bg-gradient-to-tl from-[#F8CCFB] to-[#ACD2FD] lg:w-4/6 w-full flex justify-between">
+			<div class="h-auto border bg-gradient-to-br from-[#f4a1fa] to-[#ACD2FD] lg:w-4/6 w-full flex justify-between">
 				<!-- Everyday--First--Text -->
 				<div class="flex flex-col justify-center items-center  text-center ml-2 lg:ml-3 w-1/2 lg:w-2/3 space-y-2 lg:space-y-5">
 					<h4 class="hidden lg:block lg:visible">Under Price</h4>
-				
-					<h2 class="text-[16px] lg:text-[32px] font-bold">Pet Grooming Mitt</h2>
-					<h3 class="text- lg:text-2xl text-white hidden lg:block lg:visible">(Easy Hair Removal)</h3>
-					<h1 class="font-bold text-white lg:text-black text-2xl lg:text-[56px]">$ 7.99</h1>
+		<h2 class="text-[16px] lg:text-[32px] font-bold">Pet Grooming Mitt</h2>
+		<h3 class="text- lg:text-2xl text-white hidden lg:block lg:visible">(Easy Hair Removal)</h3>
+		<h1 class="font-bold text-white lg:text-black text-2xl lg:text-[56px]">$ 7.99</h1>
 				</div>
 				<!-- Everyday--First--Images -->
 				<div class=" w-1/2 lg:w-1/3">
@@ -453,9 +456,10 @@
 				</div>
 			</div>
 
+
 			<!-- Second Div -->
 			<div
-				class="bg-gradient-to-br hover:bg-gradient-to-tl  from-[#FFF9F4] to-[#F9DF8A] lg:w-2/6 w-full flex justify-between">
+				class="border bg-gradient-to-br hover:bg-gradient-to-tl  from-[#FFF9F4] to-[#F9DF8A] lg:w-2/6 w-full flex justify-between">
 				<!-- Everyday--First--Text -->
 				<div class="ml-10 mt-10 w-1/2 space-y-5">
 					<h2 class="text-xl lg:text-lg  font-bold">T- Shirt For Dogs</h2>
@@ -466,20 +470,104 @@
 					<img src="./c1-assets/cute-pet-small.png" alt="">
 				</div>
 			</div>
-	</div>
+
+
+</div>
 
 	</section>
+
+<!-- Challange--Part--Found--or--Lost--Section -->
+
+<section>
+	<div class="container mx-auto flex flex-col justify-center items-center">
+		<h1 class="text-3xl font-bold">Found or Lost</h1>
+
+
+		<form class="w-3/4 lg:w-2/3 mt-1" action="">
+
+
+			<div class="border border-indigo-500 form-control flex justify-center items-center mb-3">
+				<label class="label cursor-pointer inline-flex">
+					<input type="radio" name="radio-10" class="radio radio-warning checked:bg-orange-400"
+						checked="checked" />
+					<span class="label-text ml-5 text-2xl">Lost</span>
+				</label>
+
+				<label class="label cursor-pointer">
+					<input type="radio" name="radio-10" class="radio radio-warning checked:bg-orange-400"
+						checked="checked" />
+					<span class="label-text ml-5 text-xl">Found</span>
+				</label>
+
+			</div>
+
+
+
+
+			<div class="space-y-4">
+				<select class="select select-info w-full">
+					<option disabled selected>Select Pet Type</option>
+					<option>Cat</option>
+					<option>Dog</option>
+					<option>Bird</option>
+					<option>Rabbit</option>
+				</select>
+
+
+				<label class="input input-bordered flex items-center gap-2">
+					Date of Found/ Lost:
+					<input type="date" class="grow" placeholder="Daisy" />
+				</label>
+
+
+				<label class="input input-bordered flex items-center gap-2">
+					Place of Found/ Lost:
+					<input type="text" class="grow" placeholder="Place of Found/ Lost" />
+				</label>
+
+				<label class="input input-bordered flex items-center gap-2">
+					Your Name:
+					<input type="text" class="grow" placeholder="Your Name" />
+				</label>
+
+
+				<label class="input input-bordered flex items-center gap-2">
+					Mobile:
+					<input type="text" class="grow" placeholder="Your Mobile" />
+				</label>
+
+				<label class="input input-bordered flex items-center gap-2">
+					Address:
+					<input type="text" class="grow" placeholder="Address" />
+				</label>
+
+
+				<label class="input input-bordered flex items-center gap-2">
+					Email:
+					<input type="email" class="grow" placeholder="abc@example.com" />
+				</label>
+			</div>
+
+			<div class="text-right">
+				<button class="btn btn-warning mt-3 text-right">Submit</button>
+			</div>
+
+		</form>
+
+
+	</div>
+</section>
 
 </main>
 
 <!-- osition-absolute, top-0, left-1/2, and transform-x-[-50%]; -->
 
 <!-- footer -->
-<footer class="bg-[#FFDC26] h-[500px] relative">
+<footer class="bg-[#FFDC26] relative mt-80">
 	<!-- footer---top--section -->
-	<div class="container mx-auto my-5 ">
+	<div class="container mx-auto my-5 flex justify-center">
 		<!-- Get--Awsome--News--Form -->
-		<div class="my-10 mx-5 lg:mx-0 bg-[#FFF9F4] flex justify-between flex-col lg:flex-row">
+		<div class="my-10 mx-5 lg:mx-0 bg-[#FFF9F4] flex justify-between flex-col lg:flex-row absolute -top-80 lg:-top-56">
 		
 			<!-- footer--top--Images-- -->
 			<div class="w-full sm:mx-6 lg:w-1/3 flex justify-center items-center h-full ">
@@ -506,14 +594,11 @@
 				
 				
 				
-				</div>
+	</div>
 				
-				
-				
-				
-				
-				<!-- footer---bottom---part -->
-				<div class="container p-5 lg:p-0 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 py-12">
+
+		<!-- footer---bottom---part -->
+	<div class="container p-5 lg:p-0 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 py-12 mt-[450px]  lg:mt-72">
 				
 					<!-- Column---01 -->
 			<div>
