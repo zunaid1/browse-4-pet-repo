@@ -24,3 +24,9 @@
     clear: both;
     display: block;
 }
+
+.section::before{
+    content: '';
+    clear: both;
+    display: block;
+}
