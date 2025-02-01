@@ -40,8 +40,15 @@
 
 <body class="sora">
 
+<!-- Loading Section -->
+<div class="loading-container flex flex-col justify-center items-center">
+
+	<div id="loading"></div>
+	<div class="loading-circle"></div>
+</div>
+
 	<!-- Header Section -->
-	<header class="">
+	<header class="header hidden">
 
 
 		<!-- Navbar -->
@@ -88,7 +95,7 @@
 											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h8m-8 6h16" />
 										</svg>
 										</div>
-									<ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  w-52  p-2 shadow">
+									<ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box  mt-3  w-52  p-2 shadow">
 										<li><a>Find a Pet</a></li>
 										<li><a>Breeds</a></li>
 										<li><a>Contact us</a></li>
@@ -121,7 +128,7 @@
 
 
 <!-- main  section  -->
-<main>
+<main class="main hidden">
 
 	<!-- Browse by Category section -->
 	<section class="container mx-auto">
@@ -561,7 +568,7 @@
 	<!-- osition-absolute, top-0, left-1/2, and transform-x-[-50%]; -->
 
 	<!-- footer -->
-	<footer class="bg-[#FFDC26] relative mt-80">
+	<footer class="footer hidden bg-[#FFDC26] relative mt-80">
 	<!-- footer---top--section -->
 	<div class="container mx-auto my-5 flex justify-center">
 		<!-- Get--Awsome--News--Form -->
@@ -633,6 +640,22 @@
 </footer>
 
 
+
+<!-- SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+
+	setTimeout(function () {
+		$('.loading-container').addClass('hidden');
+		$('.header').removeClass('hidden');
+		$('.main').removeClass('hidden');
+		$('.footer').removeClass('hidden');
+
+
+	}, 3000);
+
+</script>
 
 </body>
 
