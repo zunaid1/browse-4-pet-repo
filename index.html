@@ -95,7 +95,7 @@
 
 <!-- baner section -->
 <section id="banner"
-	class="container mx-auto bg-[url('./c1-assets/cat-big.png')] bg-cover bg-center h-64 w-full py-5 space-y-4 my-5 mt-[80] overflow-hidden bg-[url('./c1-assets/cat-big.png')] bg-no-repeat bg-[bottom_right] bg-cover h-[500px] px-0 py-[50px]">
+	class="container sm:mx-5 sm:px-5 lg:mx-auto bg-[url('./c1-assets/cat-big.png')] bg-cover bg-center h-64 w-full py-5 space-y-4 my-5 mt-[80] overflow-hidden bg-[url('./c1-assets/cat-big.png')] bg-no-repeat bg-[bottom_right] bg-cover h-[500px] px-0 py-[50px]">
 
 	<h2 class="text-left text-3xl font-bold">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h2>
 	<p>Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails
@@ -428,47 +428,44 @@
 
 	<!-- Everyday low Price Section -->
 	<section class="container mx-auto section">
-		<h2 class="text-2xl font-bold my-10">Everyday low Price</h2>
+		<h2 class="text-2xl font-bold my-5 lg:my-10">Everyday low Price</h2>
 		<!-- Cards wrapper -->
-		 <div class="flex flex-col lg:flex-row shrink flex-1 gap-5">
+		<div class="flex flex-col lg:flex-row shrink flex-1 gap-5">
 			<!-- First Div -->
-			<div class=" bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] lg:w-4/6 w-full flex justify-between">
+			<div
+				class=" bg-gradient-to-br hover:bg-gradient-to-tl from-[#F8CCFB] to-[#ACD2FD] lg:w-4/6 w-full flex justify-between">
 				<!-- Everyday--First--Text -->
-				<div>
-					<h4>Under Price</h4>
-					<h2>Pet Grooming Mitt</h2>
-					<h3>(Easy Hair Removal)</h3>
-					<h1 class="font-bold font-3xl">$ 7.99</h1>
+				<div class="flex flex-col justify-center items-center  text-center ml-2 lg:ml-3 w-1/2 lg:w-2/3 space-y-2 lg:space-y-5">
+					<h4 class="hidden lg:block lg:visible">Under Price</h4>
+				
+					<h2 class="text-[16px] lg:text-[32px] font-bold">Pet Grooming Mitt</h2>
+					<h3 class="text- lg:text-2xl text-white hidden lg:block lg:visible">(Easy Hair Removal)</h3>
+					<h1 class="font-bold text-white lg:text-black text-2xl lg:text-[56px]">$ 7.99</h1>
 				</div>
 				<!-- Everyday--First--Images -->
-				 <div>
-					<img src="./c1-assets/cute-dog-mid.png" alt="">
-				 </div>
-
-
+				<div class=" w-1/2 lg:w-1/3">
+				
+					<img class="h-full" src="./c1-assets/cute-dog-mid.png" alt="">
+				</div>
 			</div>
-
-
 
 			<!-- Second Div -->
-			<div class="bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A] lg:w-2/6 w-full">
+			<div
+				class="bg-gradient-to-br hover:bg-gradient-to-tl  from-[#FFF9F4] to-[#F9DF8A] lg:w-2/6 w-full flex justify-between">
 				<!-- Everyday--First--Text -->
-				<div>
-					<h2 class="text-2xl font-bold">T- Shirt For Dogs</h2>
-					
-					<h1 class="font-bold text-5xl">$ 7.99</h1>
+				<div class="ml-10 mt-10 w-1/2 space-y-5">
+					<h2 class="text-xl lg:text-lg  font-bold">T- Shirt For Dogs</h2>
+					<h1 class="text-[#FFDC26] font-bold text-2xl lg:text-[56px]">$ 7.99</h1>
 				</div>
 				<!-- Everyday--First--Images -->
-				 <div>
+				<div class="w-1/2 h-full">
 					<img src="./c1-assets/cute-pet-small.png" alt="">
-				 </div>
-
-
+				</div>
 			</div>
-
-		 </div>
+	</div>
 
 	</section>
+
 </main>
 
 </body>
