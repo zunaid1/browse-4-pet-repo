@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 
+:root{
+	
+	--clr-hover-bg: linear-gradient(to bottom, #7b4397 0%, #dc2430 51%, #7b4397 100%);
+	--clr-hover-bg2: linear-gradient(to bottom, #7b4397 0%, #dc2430 51%, #7b4397 100%);
+	
+}
+
+
 
 
 
@@ -30,3 +38,16 @@
     clear: both;
     display: block;
 }
+
+
+/* bg-gradient-to-br from-[#F4A1FA] to-[#ACD2FD] */
+#everyday-left-section {
+	background-image: linear-gradient(to bottom right, #F8CCFB, #ACD2FD); 
+	border-radius: 8px;
+}
+
+#everyday-right-section {
+	background-image: linear-gradient(to bottom right, #FFF9F4, #F9DF8A); 
+	border-radius: 8px;
+}
+
